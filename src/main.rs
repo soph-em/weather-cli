@@ -1,3 +1,4 @@
+use anyhow::Result;
 use get_ip::get_ip;
 use get_location::{Coordinates, get_location};
 use std::net::IpAddr;
@@ -19,15 +20,16 @@ struct Args {
     count: u8,
 }
 
-fn main() {
+fn main() -> Result<()> {
     let args = Args::parse();
 
     for _ in 0..args.count {
         println!("Hello {}!", args.name);
     }
-    let ip: Result<IpAddr, anyhow::Error> = get_ip();
-    println!("{:?}", ip);
+    let ip = get_ip()?;
+    println!("{}", ip);
 
-    // let location: Coordinates = get_location(ip).expect("reason");
-    // println!("{}, {}", location.latitude, location.longitude)
+    let location: Coordinates = get_location(ip).expect("reason");
+    println!("{}, {}", location.lat, location.lon);
+    Ok(())
 }
