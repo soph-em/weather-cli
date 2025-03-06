@@ -1,7 +1,15 @@
-use local_ip_address::local_ip;
+use anyhow::Result;
+use serde::Deserialize;
 use std::net::IpAddr;
 
-fn get_ip() -> IpAddr {
-    let my_local_ip = local_ip().unwrap();
-    return my_local_ip;
+#[derive(Deserialize)]
+struct IpResponse {
+    ip: String,
+}
+
+pub fn get_ip() -> Result<IpAddr> {
+    let response: IpResponse =
+        reqwest::blocking::get("https://api.ipify.org?format=json")?.json()?;
+    let ip_addr: IpAddr = response.ip.parse()?;
+    Ok(ip_addr)
 }
