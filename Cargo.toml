@@ -5,3 +5,9 @@ edition = "2024"
 
 [dependencies]
 clap = { version = "4.5.31", features = ["derive"] }
+local-ip-address = "0.6.3"
+geolocation = "0.2.1"
+# reqwest = "0.12.12"
+reqwest = { version = "0.12.12", features = ["blocking", "json"] }
+anyhow = "1.0.97"
+serde = { version = "1.0", features = ["derive"] }

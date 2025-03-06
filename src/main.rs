@@ -1,4 +1,6 @@
 use clap::Parser;
+mod get_ip;
+mod get_location;
 
 /// Simple program to greet a person
 #[derive(Parser, Debug)]
