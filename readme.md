@@ -1,0 +1,3 @@
+- `cargo build --release`
+- `cargo install --path .`
+- `weather-cli --help  `
