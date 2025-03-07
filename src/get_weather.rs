@@ -12,7 +12,7 @@ pub struct Weather {
 #[derive(Deserialize)]
 pub struct Current {
     pub temperature_2m: f64,
-    pub weather_code: u8,
+    pub weather_code: i8,
     pub wind_speed_10m: f64,
 }
 
@@ -20,7 +20,7 @@ pub struct Current {
 pub struct Hourly {
     pub temperature_2m: Vec<f64>,
     pub precipitation: Vec<f64>,
-    pub weather_code: Vec<u8>,
+    pub weather_code: Vec<i8>,
     pub cloud_cover: Vec<u8>,
 }
 
