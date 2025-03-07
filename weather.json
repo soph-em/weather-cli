@@ -1,0 +1,87 @@
+{
+  "latitude": 51.51147,
+  "longitude": -0.13078308,
+  "generationtime_ms": 0.08869171142578125,
+  "utc_offset_seconds": 0,
+  "timezone": "GMT",
+  "timezone_abbreviation": "GMT",
+  "elevation": 23.0,
+  "current_units": {
+    "time": "iso8601",
+    "interval": "seconds",
+    "temperature_2m": "°C",
+    "weather_code": "wmo code",
+    "wind_speed_10m": "km/h"
+  },
+  "current": {
+    "time": "2025-03-07T14:30",
+    "interval": 900,
+    "temperature_2m": 15.1,
+    "weather_code": 3,
+    "wind_speed_10m": 13.7
+  },
+  "hourly_units": {
+    "time": "iso8601",
+    "temperature_2m": "°C",
+    "precipitation": "mm",
+    "weather_code": "wmo code",
+    "cloud_cover": "%"
+  },
+  "hourly": {
+    "time": [
+      "2025-03-07T00:00",
+      "2025-03-07T01:00",
+      "2025-03-07T02:00",
+      "2025-03-07T03:00",
+      "2025-03-07T04:00",
+      "2025-03-07T05:00",
+      "2025-03-07T06:00",
+      "2025-03-07T07:00",
+      "2025-03-07T08:00",
+      "2025-03-07T09:00",
+      "2025-03-07T10:00",
+      "2025-03-07T11:00",
+      "2025-03-07T12:00",
+      "2025-03-07T13:00",
+      "2025-03-07T14:00",
+      "2025-03-07T15:00",
+      "2025-03-07T16:00",
+      "2025-03-07T17:00",
+      "2025-03-07T18:00",
+      "2025-03-07T19:00",
+      "2025-03-07T20:00",
+      "2025-03-07T21:00",
+      "2025-03-07T22:00",
+      "2025-03-07T23:00"
+    ],
+    "temperature_2m": [
+      11.3, 11.2, 11.4, 11.1, 10.8, 10.4, 9.8, 9.9, 11.1, 12.4, 13.1, 13.6,
+      14.9, 15.6, 15.1, 15.2, 14.9, 14.6, 13.5, 13.1, 12.8, 11.9, 11.9, 11.6
+    ],
+    "precipitation": [
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+    ],
+    "weather_code": [
+      3, 3, 3, 2, 3, 1, 1, 2, 1, 2, 3, 2, 1, 2, 3, 2, 3, 3, 3, 3, 2, 2, 2, 1
+    ],
+    "cloud_cover": [
+      97, 100, 100, 71, 100, 38, 40, 70, 31, 55, 86, 66, 28, 61, 98, 70, 90, 84,
+      89, 96, 66, 65, 55, 31
+    ]
+  },
+  "daily_units": {
+    "time": "iso8601",
+    "weather_code": "wmo code",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C",
+    "precipitation_probability_max": "undefined"
+  },
+  "daily": {
+    "time": ["2025-03-07"],
+    "weather_code": [3],
+    "temperature_2m_max": [15.6],
+    "temperature_2m_min": [9.8],
+    "precipitation_probability_max": [null]
+  }
+}

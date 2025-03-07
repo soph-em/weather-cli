@@ -9,7 +9,8 @@ pub struct Coordinates {
 }
 
 pub fn get_location(ip: IpAddr) -> Result<Coordinates> {
-    let body: Coordinates =
-        reqwest::blocking::get(format!("http://ip-api.com/json/{}?fields=192", ip))?.json()?;
+    let body: Coordinates = reqwest::blocking
+        ::get(format!("http://ip-api.com/json/{}?fields=192", ip))?
+        .json()?;
     Ok(body)
 }

@@ -1,11 +1,13 @@
 use anyhow::Result;
 use get_ip::get_ip;
-use get_location::{Coordinates, get_location};
+use get_location::{ Coordinates, get_location };
+use get_weather::{Weather, get_weather};
 use std::net::IpAddr;
 
 use clap::Parser;
 mod get_ip;
 mod get_location;
+mod get_weather;
 
 /// Simple program to greet a person
 #[derive(Parser, Debug)]
@@ -31,5 +33,8 @@ fn main() -> Result<()> {
 
     let location: Coordinates = get_location(ip).expect("reason");
     println!("{}, {}", location.lat, location.lon);
+
+    let weather: Weather = get_weather(location).expect("reason");
+    println!("{}", weather.current.temperature_2m);
     Ok(())
 }
